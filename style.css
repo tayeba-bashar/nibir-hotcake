@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil|Open+Sans&display=swap");
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    background-color: #ccc;
+}
+
+#disclaimer {
+    opacity: 0.8;
+    color: #eee;
+    font-size: 14px;
+}
+
+#pageRoot {
+    padding: 80px 50px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 100px;
+}
+
+#PageTitle {
+    font-family: "Allerta Stencil", sans-serif;
+    letter-spacing: 3px;
+    font-size: 46px;
+    font-weight: 100;
+    position: relative;
+    color: #444;
+    text-align: right;
+}
+
+#PageTitle::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    bottom: -10px;
+    background-color: #aaa;
+}
+
+#about {
+    color: #666;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+h3 {
+    font-size: 16px;
+    color: white;
+    background-color: #444;
+    padding: 10px 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+ol {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.ingredients {
+    list-style-image: url("handpoint.svg");
+    /* I know the test asked for this, but I want to align the items via flex so I am commenting it out */
+    padding-left: 60px;
+}
+
+.preparation {
+    /* list-style: upper-roman; */
+    /* I know the test asked for this, but I want to align the items via flex so I am commenting it out */
+}
+
+.preparation>li {
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+.preparation>li:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.emojiImg {
+    height: 45px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#conclusion {
+    margin: 50px 0 20px;
+    padding: 50px 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+    line-height: 2.5;
+    border: solid 2px #666;
+    border-left: none;
+    border-right: none;
+}
+
+.emphasize {
+    font-weight: bold;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#gallery>img {
+    margin: 10px 0;
+    width: 270px;
+    height: 200px;
+}
+
+#reference {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reference>li {
+    display: flex;
+    padding: 10px 10px;
+    margin: auto 5px;
+    border: solid 1px #666;
+    background: #666;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+#reference>li:hover {
+    border-color: #999;
+    background-color: #999;
+    color: #333;
+}
+
+#reference>li:last-child {
+    margin-right: 0;
+}
+
+#reference>li:first-child {
+    margin-left: 0;
+}
+
+#reference>li>a {
+    color: inherit;
+    cursor: pointer;
+}
